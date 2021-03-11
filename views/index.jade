@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Basic XHR example
+    form
+      label(for='verse-choose') Choose a verse
+      select#verse-choose(name='verse-choose')
+        option Verse 1
+        option Verse 2
+        option Verse 3
+        option Verse 4
+    h2
+      | The Conqueror Worm, 
+      em Edgar Allen Poe, 1843
+    pre.
+      \n          
+    script(src="/javascripts/verse.js")
+
